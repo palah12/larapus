@@ -78,6 +78,12 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <foooter class="fixed-bottom">
+            <center>
+                copyright &copy; larapus made with pinkkick
+                - {{date('Y')}}
+            </center>
+        </foooter>
     </div>
 </body>
 </html>
