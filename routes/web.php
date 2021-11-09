@@ -21,7 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//route tester admin home
-Route::get('tes-admin', function () {
-    return view('layouts.admin');
-});
+//route admin
+  Route::group(['prefix'=>'admin', 'middleware'=> ['auth']],function (){
+      route::get('/',function () {
+        return view('admin.index');
+      });
+  });
