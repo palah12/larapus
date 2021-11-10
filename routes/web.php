@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //route admin
-  Route::group(['prefix'=>'admin', 'middleware'=> ['auth']],function (){
+  Route::group(['prefix'=>'admin', 'middleware'=> ['auth','role:admin']],function (){
       route::get('/',function () {
         return view('admin.index');
       });
