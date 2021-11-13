@@ -16,6 +16,6 @@ class Author extends Model
     public $timestamps = true;
 
     public function books(){
-        $this->hasMany('App,Models,Books','author_id');
+       return $this->hasMany('App,Models,Books','author_id');
     }
 }

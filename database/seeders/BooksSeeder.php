@@ -19,13 +19,13 @@ class BooksSeeder extends Seeder
         $author2 = Author::create(['name'=>'salim a fillah']);
         $author3 = Author::create(['name'=>'m fauzi adhim']);
 
-        $book1 = Book::create(['tittle'=>'kupinang kau dengan bismilah','amount'=>3,
+        $book1 = Book::create(['title'=>'kupinang kau dengan bismilah','amount'=>3,
         'author_id'=>$author1->id]);
-        $book2 = Book::create(['tittle'=>'jalan para pejuang','amount'=>2,
+        $book2 = Book::create(['title'=>'jalan para pejuang','amount'=>2,
         'author_id'=>$author2->id]);
-        $book3 = Book::create(['tittle'=>'seminggu belajar laravel','amount'=>3,
+        $book3 = Book::create(['title'=>'seminggu belajar laravel','amount'=>3,
         'author_id'=>$author3->id]);
-        $book4 = Book::create(['tittle'=>'menyelami buku laravel','amount'=>4,
+        $book4 = Book::create(['title'=>'menyelami buku laravel','amount'=>4,
         'author_id'=>$author3->id]);
     }
 }
